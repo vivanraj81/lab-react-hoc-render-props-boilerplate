@@ -1,15 +1,16 @@
 import './App.css';
-import LikeImage from './components/LikeImage';
-import LikePost from './components/LikePost';
+// import Parentsome from './components/Parentsome.jsx';
+import Parent from './HOC/Parent.jsx';
+import ParentRender from './RenderProps/ParentRender';
+
+
 
 function App() {
   return (
-    <div>
-      <h3>Some Blog</h3>
-      <div className='buttons'>
-        <LikePost/>
-        <LikeImage/>
-      </div>
+    <div className='all'>
+        {/* <Parentsome/> */}
+        <Parent/> 
+        <ParentRender/>
     </div>
   );
 }
